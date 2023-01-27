@@ -81,15 +81,22 @@ input:focus {
   font-weight: 600;
 }
 
-.form__social__login {
+.form-social {
+  display: flex;    
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.form__social__button {
     background-color: #ffffff;
     padding: 0.9rem 1rem;
     border: 1px #e7e7e7 solid;
     cursor: pointer;
     font-weight: 700;
+    margin: 0.3rem 0;
   }
   
-  .form__social__login:hover {
+  .form__social__button:hover {
     background-color: #29bc0f;
     color: #ffffff;
   }
@@ -106,8 +113,6 @@ input:focus {
   font-weight: 900;
   margin: 3rem 0;
 }
-
-
 
 .logout {
     background-color: #ffffff;
