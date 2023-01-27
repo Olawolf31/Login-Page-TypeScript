@@ -5,8 +5,6 @@ const App: React.FC = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-
-
   return (
     <div>
       <Login
