@@ -1,6 +1,6 @@
 export interface LoginProps {
-    username: string | number;
+    username: string;
     setUsername: (username: string) => void;
-    password: string | number;
+    password: string;
     setPassword: (password: string) => void;
 }
