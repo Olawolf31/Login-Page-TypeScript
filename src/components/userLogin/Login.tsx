@@ -24,8 +24,9 @@ const Login: React.FC<LoginProps> = ({
   //handle submit
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (username === "" || password === "") {
+    if (username === "") {
       setUsernameErrorMessage("Field is Required");
+    } else if (password === "") {
       setPasswordErrorMessage("Field is Required");
     } else if (password.length < 5 || password.length > 20) {
       setPasswordErrorMessage("Password must be 5-20 characters long.");
